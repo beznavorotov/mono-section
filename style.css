@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e9d3ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    max-width: 1400px;
+    background-color: transparent;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  
+  
+  .phone-wrapper {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    max-width: 600px;
+  }
+  
+  .phone-image img {
+    max-width: 300px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  }
+  
+  .card-stack {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+  
+  /* Базові стилі карток */
+  .card {
+    width: 200px;
+    height: 120px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  
+  /* Зміщення карток */
+  .card-stack.left .card:nth-child(1) {
+    margin-top: -40px;
+    z-index: 1;
+    transform: rotate(-10deg);
+  }
+  .card-stack.left .card:nth-child(2) {
+    margin-top: -40px;
+    z-index: 2;
+    transform: rotate(-10deg);
+  }
+  .card-stack.left .card:nth-child(3) {
+    margin-top: -40px;
+    z-index: 3;
+    transform: rotate(-10deg);
+  }
+  .card-stack.right .card:nth-child(1) {
+    margin-top: -40px;
+    z-index: 1;
+    transform: rotate(10deg);
+  }
+  
+  .card-stack.right .card:nth-child(2) {
+    margin-top: -40px;
+    z-index: 2;
+    transform: rotate(10deg);
+  }
+  .card-stack.right .card:nth-child(3) {
+    margin-top: -40px;
+    z-index: 3;
+    transform: rotate(10deg);
+  }
+  
+  /* Позиція зліва та справа */
+  .card-stack.left {
+    left: -120px;
+  }
+  
+  .card-stack.right {
+    right: -110px;
+  }
+  
+  /* Стилі контенту */
+  .content {
+    flex: 1;
+    max-width: 600px;
+    padding-left: 100px;
+  }
+  .title{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  h1 {
+    font-size: 86px;
+    font-weight: bold;
+    color: #2b2b2b;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #2b2b2b;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding-top: 40px;
+  }
+  
+  input[type="tel"] {
+    padding: 12px;
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #e3474c;
+  }
+  
+  .qr-and-stores {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 40px;
+  }
+  
+  
+  .qr {
+    width: 210px;
+    height: 210px;
+    border-radius: 10px;
+    box-shadow: 0 30px 40px rgba(154, 1, 1, 0.3);
+  }
+  .stores{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .stores img {
+    height: 60px;
+    margin-right: 10px;
+    padding: 6px;
+  }
+  .stores img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }

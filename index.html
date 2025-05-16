@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>monobank – банк у телефоні</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="icon" href="https://monobank.ua/favicon.svg" type="image/svg+xml">
+  </head>
+  <body>
+    <div class="container">
+      <div class="phone-wrapper">
+        <!-- Ліві картки -->
+        <div class="card-stack left">
+          <div class="card">
+            <a href="https://monobank.ua/14" target="_blank" rel="noopener">
+              <img src="./img/child-yellow@2x.png" alt="monobank card" />
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://monobank.ua/white" target="_blank" rel="noopener">
+              <img src="./img/white@2x.png" alt="monobank card" />
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://monobank.ua" target="_blank" rel="noopener">
+              <img src="./img/black@2x.png" alt="monobank card" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Основне зображення телефону -->
+        <div class="phone-image">
+          <img src="./img/monobank.png" alt="monobank app" />
+        </div>
+
+        <!-- Праві картки -->
+        <div class="card-stack right">
+          <div class="card">
+            <a href="https://monobank.ua/currency-card" target="_blank" rel="noopener">
+              <img src="./img/currency-eur@2x.png" alt="monobank card" />
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://monobank.ua/currency-card" target="_blank" rel="noopener">
+              <img src="./img/currency-usd@2x.png" alt="monobank card" />
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://monobank.ua/iron" target="_blank" rel="noopener">
+              <img src="./img/iron@2x.png" alt="monobank card" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="title">
+          <h1>monobank</h1>
+          <h2>банк у вашому смартфоні</h2>
+        </div>
+
+        <div class="qr-and-stores">
+          <img src="./img/qr.jpg" alt="QR" class="qr" />
+          <div class="stores">
+            <a href="https://monobank.ua/store-link/ios?_fbp=fb.1.1740510490104.323948577379803092&site_clid=6c1fcaa0-cbc7-41db-b225-83560d48ebf8" target="_blank" rel="noopener">
+              <img src="./img/apple-store.png" alt="App Store" />
+            </a>
+            <a href="https://monobank.ua/store-link/android?_fbp=fb.1.1740510490104.323948577379803092&site_clid=6c1fcaa0-cbc7-41db-b225-83560d48ebf8" target="_blank" rel="noopener">
+              <img src="./img/google-play-market.png" alt="Google Play" />
+            </a>
+            <a href="https://appgallery.huawei.com/app/C101355935" target="_blank" rel="noopener">
+              <img src="./img/huawei.png" alt="AppGallery" />
+            </a>
+          </div>
+        </div>
+
+        <div class="form">
+          <input type="tel" id="phone" placeholder="+380 (XX) XXX-XX-XX" />
+          <button onclick="sendLink()">Отримати посилання</button>
+        </div>
+        <p>
+          Ми розрахуємо кредитний ліміт індивідуально для вас без інтерв’ю з
+          кредитними брокерами й походів до банку. Від вас будуть потрібні
+          тільки фото паспорта й ІПН
+        </p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
